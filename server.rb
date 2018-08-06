@@ -1,7 +1,11 @@
 
 require 'sinatra'
 
-get '/server' do
-  "Hello World!"
+module ToDo
+	class ToDo < Sinatra::Base
+		get '/server' do
+		  "Hello World!"
+		end
+	end
 end
 
